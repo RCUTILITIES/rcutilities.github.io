@@ -4,34 +4,52 @@
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>R&C Utilities | About</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>  
-    * {  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
-      min-height: 100vh; 
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
-      color: #222;
+      color: #003366;
       padding: 2rem;
-      max-width: 1200px;
+      max-width: 960px;
       margin: auto;
       text-align: center;
     }
-    h1, h2, p {
-      color: #003366;
-      text-align: center;
+
+    h1, h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
     }
+
     p {
       margin: 1rem 0;
       font-size: 1rem;
       line-height: 1.6;
     }
+
+    .logo {
+      margin: 3rem auto;
+      max-width: 600px;
+    }
+
+    .logo img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
     .gallery {
       margin-top: 4rem;
     }
+
     .gallery-grid {
       display: flex;
       flex-wrap: wrap;
@@ -39,6 +57,7 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+
     .gallery img {
       width: 100%;
       max-width: 350px;
@@ -47,37 +66,36 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    a.button {
+
+    .button {
       display: inline-block;
-      margin-top: 2rem;
+      margin: 2rem 1rem;
       padding: 1rem 2rem;
       background-color: #003366;
       color: #fff;
       font-weight: 600;
       border-radius: 8px;
       text-decoration: none;
+      width: 180px;
+      text-align: center;
     }
+
     footer {
       margin-top: 4rem;
       padding-top: 2rem;
       border-top: 1px solid #ccc;
+      font-size: 0.95rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 0.5rem;
-      font-size: 0.95rem;
-      text-align: center;
     }
+
     @media (min-width: 600px) {
       footer {
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
       }
-    }
-    .logo {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
     }
   </style>
 </head>
@@ -87,39 +105,38 @@
   <p>Your trusted partner for utilities.</p>
 
   <!-- Middle Logo/Image Section -->
-  <div class="logo" style="margin: 3rem auto; max-width: 600px;">
-    <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="Worker digging ductwork" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div class="logo">
+    <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="Worker digging ductwork">
   </div>
 
-  <!-- Paragraphs about R&C -->
-  <div style="margin-top: 2rem;">
-    <p style="margin-top: 2rem;">
-      R&C Utilities are fibre infrastructure specialists with extensive experience in cabling, splicing, and testing across a wide range of environments and project scales. Our teams are fully trained in all major fibre installation methods, including blown fibre, cable pulling, overhead and underground routing, and fibre-to-the-premises (FTTP) delivery. We are proficient in core alignment and fusion splicing techniques, OTDR and ILM testing, and fault diagnostics, ensuring every connection meets the highest standards of quality and performance. Over the years, we’ve successfully delivered projects for a variety of clients, including major network providers, Tier 1 contractors, and local authorities, adapting to different specifications, safety protocols, and delivery models. From rural rollouts to dense urban builds, R&C Utilities bring the knowledge, adaptability, and precision needed to get the job done right
-    </p>
-
+  <!-- About Content -->
+  <div>
     <p>
-      Although fibre was our first step into the contracting world, R&C Utilities have since expanded our capabilities to cover a broad range of utilities and civils work. We now deliver reliable and high quality services across the telecoms and power sectors, as well as private estate infrastructure projects. Our civils partners are experienced in ducting, trenching, jointing chamber builds, reinstatement, and more, with a strong focus on safety, compliance, and minimal disruption. In addition, we offer domestic and commercial tarmac driveway installations, combining durable surfacing solutions with professional finish standards
+      R&C Utilities are fibre infrastructure specialists with extensive experience in cabling, splicing, and testing across a wide range of environments and project scales. Our teams are fully trained in all major fibre installation methods, including blown fibre, cable pulling, overhead and underground routing, and fibre-to-the-premises (FTTP) delivery. We are proficient in core alignment and fusion splicing techniques, OTDR and ILM testing, and fault diagnostics, ensuring every connection meets the highest standards of quality and performance.
+    </p>
+    <p>
+      Over the years, we’ve successfully delivered projects for a variety of clients, including major network providers, Tier 1 contractors, and local authorities, adapting to different specifications, safety protocols, and delivery models. From rural rollouts to dense urban builds, R&C Utilities bring the knowledge, adaptability, and precision needed to get the job done right.
+    </p>
+    <p>
+      Although fibre was our first step into the contracting world, R&C Utilities have since expanded our capabilities to cover a broad range of utilities and civils work. We now deliver reliable and high-quality services across the telecoms and power sectors, as well as private estate infrastructure projects. Our civils partners are experienced in ducting, trenching, jointing chamber builds, reinstatement, and more, with a strong focus on safety, compliance, and minimal disruption. In addition, we offer domestic and commercial tarmac driveway installations, combining durable surfacing solutions with professional finish standards.
     </p>
   </div>
 
   <!-- Gallery -->
   <div class="gallery">
-
     <div class="gallery-grid">
       <img src="https://cdn.pixabay.com/photo/2025/07/15/06/35/06-35-21-110_960_720.png" alt="Worker measuring private driveway">
-     
-  
     </div>
   </div>
 
   <!-- CTA Buttons -->
-  <div style="text-align: center; margin-top: 2rem;">
-    <a href="about.html" class="button" style="margin-right: 1rem; width: 180px; display: inline-block; text-align: center;">About Us</a>
-    <a href="contact.html" class="button" style="width: 180px; display: inline-block; text-align: center;">Contact Our Team</a>
+  <div>
+    <a href="about.html" class="button">About Us</a>
+    <a href="contact.html" class="button">Contact Our Team</a>
   </div>
 
-  <!-- 15 Years Experience Line -->
-  <p style="margin-top: 2rem; font-weight: 600; font-size: 1.1rem; color: #003366;">
+  <!-- Experience Line -->
+  <p style="font-weight: 600; font-size: 1.1rem; color: #003366; margin-top: 2rem;">
     A team with over 15 years of experience delivering successful utility and telecoms solutions across the UK
   </p>
 
@@ -132,5 +149,4 @@
 
 </body>
 </html>
-https://images.pexels.com/photos/31147792/pexels-photo-31147792.jpeg
-<!-- Trigger rebuild -->
+
