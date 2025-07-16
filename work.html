@@ -10,6 +10,38 @@
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Video behind logo */
+    .video-logo-wrapper {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 240px; /* Logo height (160px) * 1.5 */
+      overflow: hidden;
+    }
+
+    .video-logo-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .logo img {
+      max-height: 160px;
+      height: auto;
+      width: auto;
+    }
+
+    .content {
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
@@ -19,14 +51,6 @@
     h1 {
       color: #003366;
       margin-bottom: 2rem;
-    }
-
-    .logo {
-      margin-bottom: 2rem;
-    }
-
-    .logo img {
-      max-height: 160px;
     }
 
     .project {
@@ -52,20 +76,26 @@
 </head>
 <body>
 
-  <div class="logo">
-    <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="R&C Utilities Logo">
+  <div class="video-logo-wrapper">
+    <video autoplay muted loop playsinline>
+      <source src="https://cdn.pixabay.com/video/2022/06/21/121203-724696291_tiny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="logo">
+      <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="R&C Utilities Logo">
+    </div>
   </div>
 
-  <h1>Our Work</h1>
+  <div class="content">
+    <h1>Our Work</h1>
 
-  <div class="project">
-    <h2>Example Project Title</h2>
-    <p>Description of the work done, including technologies used, location, timeframe, or results.</p>
+    <div class="project">
+      <h2>Example Project Title</h2>
+      <p>Description of the work done, including technologies used, location, timeframe, or results.</p>
+    </div>
+
+    <p><a href="index.html">← Back to Home</a></p>
   </div>
-
-  <!-- More projects can go here -->
-
-  <p><a href="index.html">← Back to Home</a></p>
 
 </body>
 </html>
