@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,56 +34,42 @@
       color: #003366;
       text-decoration: none;
       font-weight: 600;
-      display: block;
-      margin-top: 0.5rem;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
     }
     .logo {
       margin-bottom: 2rem;
     }
-    footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #ccc;
-      font-size: 0.95rem;
+    a.back-link {
+      display: inline-block;
+      margin-top: 2rem;
       color: #003366;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      align-items: center;
+      text-decoration: none;
+      font-weight: 600;
     }
-    @media (min-width: 600px) {
-      footer {
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-      }
+    a.back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="logo">
-    <img
-      src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png"
-      alt="R&C Logo"
-      style="max-height: 160px;"
-    />
+    <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="R&C Logo" style="max-height: 160px;" />
   </div>
+
   <h2>Contact Us</h2>
 
   <div class="contact-card">
     <h2>Ross Mogridge – Managing Director</h2>
-    <a class="email-link" href="mailto:rossmogridge@rcutilities.co.uk">rossmogridge@rcutilities.co.uk</a>
+    <p><a class="email-link" href="mailto:rossmogridge@rcutilities.co.uk">rossmogridge@rcutilities.co.uk</a></p>
   </div>
 
   <div class="contact-card">
     <h2>Craig Jenkins – Consultant</h2>
-    <a class="email-link" href="mailto:craigjenkins@rcutilities.co.uk">craigjenkins@rcutilities.co.uk</a>
+    <p><a class="email-link" href="mailto:craigjenkins@rcutilities.co.uk">craigjenkins@rcutilities.co.uk</a></p>
   </div>
 
-  <a href="index.html">&larr; Back to Home</a>
-
-  <footer>
-    <p><strong>Phone:</strong> 020 3947 8846</p>
-  </footer>
+  <a href="index.html" class="back-link">&larr; Back to Home</a>
 </body>
 </html>
