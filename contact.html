@@ -10,70 +10,133 @@
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       color: #222;
+      margin: 0;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
       max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+      width: 100%;
       text-align: center;
     }
-    h1, h2 {
+
+    h1, h2, h3 {
       color: #003366;
       margin-bottom: 1rem;
     }
+
     p {
       margin: 1rem 0;
     }
-    .contact-card {
+
+    .contact-card, .form-card {
       background: #fff;
       border: 1px solid #ddd;
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      margin: 2rem 0;
+      margin: 2rem auto;
+      text-align: center;
     }
-    a.email-link {
-      color: #003366;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a.email-link:hover {
-      text-decoration: underline;
-    }
+
     .logo {
       margin-bottom: 2rem;
     }
-    a.back-link {
-      display: inline-block;
-      margin-top: 2rem;
+
+    a.email-link, a.back-link {
       color: #003366;
       text-decoration: none;
       font-weight: 600;
     }
+
+    a.email-link:hover,
     a.back-link:hover {
       text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Inter', sans-serif;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background-color: #0055aa;
+    }
+
+    .success-msg {
+      background: #e0ffe0;
+      color: #155724;
+      padding: 1rem;
+      border: 1px solid #b2dfb2;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="R&C Logo" style="max-height: 160px;" />
-  </div>
+  <div class="container">
+    <div class="logo">
+      <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="R&C Logo" style="max-height: 160px;" />
+    </div>
 
-  <h2>Contact Us</h2>
-
-  <div class="contact-card">
-    <h2>Ross Mogridge – Managing Director</h2>
-    <p><a class="email-link" href="mailto:rossmogridge@rcutilities.co.uk">rossmogridge@rcutilities.co.uk</a></p>
-  </div>
-
-  <div class="contact-card">
-    <h2>Craig Jenkins – Consultant</h2>
-    <p><a class="email-link" href="mailto:craigjenkins@rcutilities.co.uk">craigjenkins@rcutilities.co.uk</a></p>
-  </div>
+    <h2>Contact Us</h2>
 
     <div class="contact-card">
-    <h2>Contact Number - xxxxxxx </h2>
+      <h3>Ross Mogridge – Managing Director</h3>
+      <p><a class="email-link" href="mailto:rossmogridge@rcutilities.co.uk">rossmogridge@rcutilities.co.uk</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Craig Jenkins – Consultant</h3>
+      <p><a class="email-link" href="mailto:craigjenkins@rcutilities.co.uk">craigjenkins@rcutilities.co.uk</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Contact Number – Coming Soon</h3>
+    </div>
+
+    <div class="form-card">
+      <h2>Request a Call Back</h2>
+      <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" required />
+        <textarea name="message" placeholder="Tell us about your query..." required></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
   </div>
-  
-  <a href="index.html" class="back-link">&larr; Back to Home</a>
 </body>
 </html>
