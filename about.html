@@ -13,16 +13,18 @@
       padding: 0;
     }
 
-    html, body {
-      height: 100%;
+    body {
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       color: #222;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
+    /* Top section with video background */
     .logo-background {
       position: relative;
       width: 100vw;
@@ -32,7 +34,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 2rem;
-      box-shadow: inset 0 0 60px rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
     }
 
     .logo-background video {
@@ -46,13 +48,16 @@
     }
 
     .logo {
-      max-width: 340px;
-      width: 100%;
+      background: white;
+      border-radius: 12px;
       padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 180px;
+      max-width: 340px;
+      width: 100%;
       z-index: 1;
     }
 
@@ -96,14 +101,14 @@
 </head>
 <body>
 
-  <!-- VIDEO BACKGROUND WITH TRANSPARENT LOGO -->
+  <!-- VIDEO BACKGROUND WITH LOGO -->
   <div class="logo-background">
     <video autoplay muted loop playsinline>
       <source src="https://cdn.pixabay.com/video/2022/06/21/121203-724696291_tiny.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="logo">
-      <img src="/mnt/data/68a95604-1368-4ed7-91b7-4f9414f63033.png" alt="R&C Utilities Logo">
+      <img src="https://cdn.pixabay.com/photo/2025/07/15/06/57/06-57-29-208_960_720.png" alt="R&C Utilities Logo">
     </div>
   </div>
 
